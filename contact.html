@@ -24,6 +24,9 @@
         <input type="text" id="name" name="name" required>
         <label for="email">Email (required)</label>
         <input type="email" id="email" name="email" required>
+        <label for="phone">Phone (optional, format: digits and spaces)</label>
+        <input type="tel" id="phone" name="phone"
+             pattern="[0-9\s\-+]+" title="Digits, spaces, hyphens, or plus only">
       </fieldset>
       <fieldset>
         <legend><h2>Your message</h2></legend>
@@ -42,6 +45,8 @@
         <label for="hear-search">Search / web</label>
         <input type="radio" id="hear-other" name="hear" value="other">
         <label for="hear-other">Other</label>
+        <input type="text" id="hear-other-text" name="hear-other-text"
+               placeholder="Please specify if 'Other'">
       </fieldset>
       <button type="submit">Send message</button>
     </form>
